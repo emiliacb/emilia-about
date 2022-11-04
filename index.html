@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+
+    <!-- Primary Meta Tags -->
+    <title>Emilia / About</title>
+    <meta name="title" content="Emilia / About" />
+    <meta name="description" content="A simple and accessible personal page." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://emiliaborg.ar/" />
+    <meta property="og:title" content="Emilia / About" />
+    <meta
+      property="og:description"
+      content="A simple and accessible personal page."
+    />
+    <meta property="og:image" content="/preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://emiliaborg.ar/" />
+    <meta property="twitter:title" content="Emilia / About" />
+    <meta
+      property="twitter:description"
+      content="A simple and accessible personal page."
+    />
+    <meta property="twitter:image" content="/preview.png" />
+
+    <script>
+      // Darkmode preference
+      const userOSThemeDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const userPreferDark =
+        localStorage.getItem("theme") === "dark" || userOSThemeDark;
+      document.documentElement.classList.toggle("dark", userPreferDark);
+    </script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
