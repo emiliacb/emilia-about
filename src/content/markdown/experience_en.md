@@ -16,7 +16,7 @@
 <p style="absolute; margin-top: -2rem; font-size: 13px;">September 2020 - present</p>
 
 - **Developed** web pages and apps, using React and content management systems like Drupal and Strapi.
-- **Created** and edited UI designs using Figma and Photoshop, with high interaction with stakeholders. Including the development of interactive prototypes.
+- **Designed** User Interfaces using Figma and Photoshop, with high interaction with stakeholders. Including the development of interactive prototypes.
 - **Communicated** with clients of different kinds directly in non-technical language.
 - **Learned** how to use technologies such as Vue, Gatsby, Strapi, and Tailwind that were required by the clients, in a short period of time, sometimes in a few days.
 - **Asynchronous** jobs with a high level of autonomy and accountability.
