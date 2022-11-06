@@ -1,4 +1,10 @@
 # emilia-about
-A simple and accesible about me page
+A simple about me page
 
-https://em3c2.github.io/emilia-about/
+<br>
+
+## Docs
+https://docs.emiliaborg.ar
+
+## Page
+https://emiliaborg.ar
