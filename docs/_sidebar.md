@@ -1,0 +1,2 @@
+* [Home](/)
+* [Technology](technology.md)

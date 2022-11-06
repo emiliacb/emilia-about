@@ -1,2 +1,2 @@
 # emilia-about
-A simple about me page
+A simple and accesible about me page
