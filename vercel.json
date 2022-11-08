@@ -1,16 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/docs",
-      "destination": "https://docs.emiliaborg.ar"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
