@@ -4,7 +4,7 @@
 
 #### Software Developer
 
-- **Desarrollo** de interfaces usuario escalables usando React con server side Rendering, middlewares y servicios.
+- **Desarrollo** de interfaces usuario escalables usando React con server side Rendering, middlewares y servicios con Express.
 - **Responsable** del desarrollo y delivery de características clave desde cero hasta producción.
 - **Construcción** de dashboards de monitoreo en DataDog y uso de herramientas como Kibana y NewRelic.
 - **Contribución** a las bibliotecas internas de componentes UI y creación de librerias nuevas con Lerna.

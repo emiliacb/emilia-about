@@ -6,7 +6,7 @@
 
 <a href="https://www.estudiosande.com/" target="_blank" > 🔗 Link</a>
 
-Developed the full webpage with server side rendering with focus in performance. Added a simple post system based in md files.
+Developed the full webpage with server side rendering in Next with focus in performance. Added a simple post system based in md files.
 
 ### Awkbit Homepage
 

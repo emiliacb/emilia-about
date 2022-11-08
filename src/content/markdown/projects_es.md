@@ -6,7 +6,7 @@
 
 <a href="https://www.estudiosande.com/" target="_blank" >🔗 Enlace</a>
 
-Desarrollo de página web completa con renderizado del lado del servidor con enfoque en el rendimiento. Se agregó un sistema de posts simple basado en archivos md.
+Desarrollo de página web completa con renderizado del lado del servidor con Next y un enfoque en el rendimiento. Se agregó un sistema de posts simple basado en archivos md.
 
 ### Awkbit Homepage
 
