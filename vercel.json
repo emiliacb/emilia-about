@@ -1,14 +1,14 @@
 {
+  "redirects": [
+    {
+      "source": "/docs",
+      "destination": "/docs/index.html"
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/me",
-      "destination": "/profile.html"
     }
   ],
   "headers": [
