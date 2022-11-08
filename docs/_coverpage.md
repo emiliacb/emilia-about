@@ -5,4 +5,4 @@
 <br>
 
 [GitHub](https://github.com/em3c2/emilia-about/)
-[Get Started](#introduction)
+[Get Started](/README)
