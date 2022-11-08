@@ -1,6 +1,6 @@
 # Emilia / About
 
-> A simple and accesible about me page.
+> A simple about me page.
 
 <br>
 
