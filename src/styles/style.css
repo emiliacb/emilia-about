@@ -12,6 +12,7 @@ body {
   @apply print:!text-black print:!bg-white;
 }
 
+/* A11y config */
 *:focus-visible {
   @apply opacity-100 rounded-md transition duration-300;
   outline: none;
@@ -19,11 +20,11 @@ body {
 }
 
 * {
-  @apply motion-reduce:!transition-none;
+  @apply motion-reduce:!transition-none motion-reduce:!animate-none;
 }
 
 .motion-reduce * {
-  @apply transition-none;
+  @apply !transition-none !animate-none;
 }
 
 /* Custom Tailwind */
