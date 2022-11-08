@@ -3,7 +3,7 @@
 
 #### Software Developer
 
-- **Developed** scalable user interfaces using React with server side rendering, middlewares and services.
+- **Developed** scalable user interfaces using React with server side rendering, middlewares and services with Express.
 - **Responsible** for the development and delivery of key features from scratch to production.
 - **Built** tracking dashboards in DataDog and used tools like Kibana and NewRelic.
 - **Contributed** to the internal UI libraries, and started new ones using Lerna.
