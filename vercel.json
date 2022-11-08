@@ -2,14 +2,10 @@
   "redirects": [
     {
       "source": "/docs",
-      "destination": "/docs/index.html"
+      "destination": "https://docs.emiliaborg.ar"
     }
   ],
   "rewrites": [
-    {
-      "source": "/docs",
-      "destination": "/docs/index.html"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
