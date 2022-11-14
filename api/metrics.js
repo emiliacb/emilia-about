@@ -15,11 +15,13 @@ const logtail = new Logtail(process.env.LOGTAIL_TOKEN)
 export default async function handler(req, res) {
   const { query: { level = 'info', event, type } = {}, headers } = req
   const isMobile = headers['user-agent'].includes('Mobile') || headers['user-agent'].includes('Opera M')
+  
   const tracksData = {
     origin: headers['origin'],
-    realIp: headers['x-real-ip'],
+    real_ip: headers['x-real-ip'],
     userAgent: headers['user-agent'],
-    isMobile,
+    is_mobile: isMobile,
+    date: new Date(),
     event,
     type,
   }
