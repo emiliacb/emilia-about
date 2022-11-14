@@ -6,4 +6,14 @@ const LANG = {
 
 const SECTIONS = ['experience', 'education', 'projects', 'information']
 
-export { LANG, SECTIONS }
+const EVENTS = {
+  homepage: {
+    view: 'homepage/view',
+  },
+}
+
+const TRACKS_TYPES = {
+  view: 'view',
+};
+
+export { LANG, SECTIONS, EVENTS, TRACKS_TYPES }
