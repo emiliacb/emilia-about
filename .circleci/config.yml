@@ -8,7 +8,7 @@ workflows:
   upload-to-codecov:
     jobs:
       - node/test:
-          version: '18.11'
+          version: '16.18'
           pkg-manager: npm
           post-steps:
             - codecov/upload

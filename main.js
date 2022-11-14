@@ -10,12 +10,14 @@ import { LANG, EVENTS, TRACKS_TYPES } from './src/utils/constants'
 const language = window && window.location.pathname === LANG.esPath ? LANG.es : LANG.en
 document.documentElement.setAttribute('lang', language)
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://localhost:3000'
+const isDevelopment = import.meta.env.VERCEL_ENV === 'development' || import.meta.env.MODE === 'development'
+const APP_URL = isDevelopment ? import.meta.env.VITE_APP_URL : import.meta.env.VITE_VERCEL_URL
 
 /* Tracking view */
-fetch(`${API_URL}api/metrics?event=${EVENTS.homepage.view}&type=${TRACKS_TYPES.view}`).catch((error) => {
+fetch(`${APP_URL}/api/metrics?event=${EVENTS.homepage.view}&type=${TRACKS_TYPES.view}`).catch((error) => {
   error.step = EVENTS.homepage.view
   console.error('Error tracking', { error })
 })
 
+/*---- Render ----*/
 render(homePage(), document.getElementById('app'))

@@ -1,6 +1,7 @@
-.git
-.DS_Store
 /node_modules
 /coverage
+/dist
+.git
+.DS_Store
 .env
 .vercel
