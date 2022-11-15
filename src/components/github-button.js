@@ -1,9 +1,6 @@
 /* Dependencies */
 import { html, render } from 'lit-html';
 
-/* Utils */
-import { changeLangObserver } from '../utils/contents';
-
 class GithubButton extends HTMLElement {
   get template() {
     return html`
@@ -35,7 +32,6 @@ class GithubButton extends HTMLElement {
   }
 
   connectedCallback() {
-    changeLangObserver(() => render(this.template, this));
     render(this.template, this);
   }
 }
