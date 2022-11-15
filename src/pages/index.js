@@ -8,7 +8,6 @@ import '../components/nav';
 import '../components/github-button';
 
 /* Utils */
-import { changeLangObserver } from '../utils/contents';
 import { SECTIONS } from '../utils/constants';
 
 class HomePage extends HTMLElement {
@@ -33,7 +32,6 @@ class HomePage extends HTMLElement {
   }
 
   connectedCallback() {
-    changeLangObserver(() => render(this.template, this));
     render(this.template, this);
   }
 }
