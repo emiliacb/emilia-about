@@ -20,7 +20,7 @@ const getContent = (path) => {
   return wording || defaultWording || '-';
 };
 
-// TODO create only a observer and use an array of elements that subscribe to the changes
+// TODO create only a observer and use an array of callbacks that subscribe to the changes
 const changeLangObserver = (callback) => {
   const observer = new MutationObserver((mutations) => mutations.forEach(({ attributeName }) => attributeName && callback()));
   observer.observe(document.documentElement, { attributes: true });
