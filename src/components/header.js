@@ -1,9 +1,9 @@
 /* Dependencies */
-import { html, render } from 'lit-html'
+import { html, render } from 'lit-html';
 
 /* Utils */
-import { toggleDarkMode } from '../utils'
-import { toggleLanguage, changeLangObserver, getContent } from '../utils/contents'
+import { toggleDarkMode } from '../utils';
+import { toggleLanguage, changeLangObserver, getContent } from '../utils/contents';
 
 class Header extends HTMLElement {
   get template() {
@@ -32,13 +32,13 @@ class Header extends HTMLElement {
         </div>
       </header>
       <span class="container -mt-12 hidden print:block italic">emiliacabralb@gmail.com</span>
-    `
+    `;
   }
 
   connectedCallback() {
-    changeLangObserver(() => render(this.template, this))
-    render(this.template, this)
+    changeLangObserver(() => render(this.template, this));
+    render(this.template, this);
   }
 }
 
-customElements.define('header-wc', Header)
+customElements.define('header-wc', Header);

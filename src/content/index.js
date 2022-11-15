@@ -1,15 +1,15 @@
 /* Dependencies */
-import { marked } from 'marked'
+import { marked } from 'marked';
 
 /* Markdown files */
-import experienceEn from './markdown/experience_en.md?raw'
-import experienceEs from './markdown/experience_es.md?raw'
-import educationEn from './markdown/education_en.md?raw'
-import educationEs from './markdown/education_es.md?raw'
-import projectsEn from './markdown/projects_en.md?raw'
-import projectsEs from './markdown/projects_es.md?raw'
-import informationEn from './markdown/information_en.md?raw'
-import informationEs from './markdown/information_es.md?raw'
+import experienceEn from './markdown/experience_en.md?raw';
+import experienceEs from './markdown/experience_es.md?raw';
+import educationEn from './markdown/education_en.md?raw';
+import educationEs from './markdown/education_es.md?raw';
+import projectsEn from './markdown/projects_en.md?raw';
+import projectsEs from './markdown/projects_es.md?raw';
+import informationEn from './markdown/information_en.md?raw';
+import informationEs from './markdown/information_es.md?raw';
 
 const markdown = {
   experienceEn: marked.parse(`${experienceEn}`),
@@ -20,7 +20,7 @@ const markdown = {
   projectsEs: marked.parse(`${projectsEs}`),
   informationEn: marked.parse(`${informationEn}`),
   informationEs: marked.parse(`${informationEs}`),
-}
+};
 
 const contents = {
   en: {
@@ -93,6 +93,6 @@ const contents = {
       text: markdown.informationEs,
     },
   },
-}
+};
 
-export default contents
+export default contents;
