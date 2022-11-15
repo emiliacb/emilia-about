@@ -1,11 +1,11 @@
 /* Dependencies */
-import { render } from 'lit-html';
+import { render, html } from 'lit-html';
 
 /* Pages */
-import homePage from './src/pages/index';
+import './pages/index';
 
 /* Utils */
-import { LANG, EVENTS, TRACKS_TYPES } from './src/utils/constants';
+import { LANG, EVENTS, TRACKS_TYPES } from './utils/constants';
 
 const language = window && window.location.pathname === LANG.esPath ? LANG.es : LANG.en;
 document.documentElement.setAttribute('lang', language);
@@ -19,4 +19,4 @@ fetch(`${APP_URL}/api/metrics?event=${EVENTS.homepage.view}&type=${TRACKS_TYPES.
 });
 
 /*---- Render ----*/
-render(homePage(), document.getElementById('app'));
+render(html`<homepage-wc></homepage-wc>`, document.getElementById('app'));
