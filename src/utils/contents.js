@@ -6,7 +6,6 @@ const toggleLanguage = () => {
   const newlanguage = window.location.pathname === LANG.esPath ? LANG.en : LANG.es;
   window.history.pushState({}, '', `/${newlanguage}`);
   document.documentElement.setAttribute('lang', newlanguage);
-  window.dispatchEvent(new CustomEvent('rerender'));
 };
 
 const getLocale = () => document.documentElement.getAttribute('lang');
