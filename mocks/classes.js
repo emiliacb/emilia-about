@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 class MockedLocalStorage {
   constructor() {
     this.store = {};
