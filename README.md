@@ -5,12 +5,6 @@
 
 A simple about me page
 
-<br>
-
-⚠ Work in progress
-
-## Page
-https://emiliaborg.ar
-
-## Docs
-https://docs.emiliaborg.ar
+| Webpage  | Docs  |
+|---|---|
+| https://emiliaborg.ar  | https://docs.emiliaborg.ar  |
