@@ -1,13 +1,13 @@
 /* Dependencies */
-import { html } from 'lit-html'
+import { html } from 'lit-html';
 
 /* Lit components */
-import '../components/section'
-import '../components/header'
-import '../components/nav'
+import '../components/section';
+import '../components/header';
+import '../components/nav';
 
 /* Utils */
-import { SECTIONS } from '../utils/constants'
+import { SECTIONS } from '../utils/constants';
 
 // TODO transform in component
 const homePage = () => html`
@@ -28,6 +28,6 @@ const homePage = () => html`
     </a>
   </main>
   <div aria-hidden="true" class="theme-transition"></div>
-`
+`;
 
-export default homePage
+export default homePage;

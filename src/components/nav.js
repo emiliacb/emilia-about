@@ -1,15 +1,15 @@
 /* Dependencies */
-import { html, render } from 'lit-html'
+import { html, render } from 'lit-html';
 
 /* Utils */
-import { SECTIONS } from '../utils/constants'
-import { getContent, changeLangObserver } from '../utils/contents'
+import { SECTIONS } from '../utils/constants';
+import { getContent, changeLangObserver } from '../utils/contents';
 
 class Nav extends HTMLElement {
   constructor() {
-    super()
-    this.userPreferMotionReduce = document.documentElement.classList.contains('motion-reduced')
-    this.toggleReduceMotion = this.toggleReduceMotion.bind(this)
+    super();
+    this.userPreferMotionReduce = document.documentElement.classList.contains('motion-reduced');
+    this.toggleReduceMotion = this.toggleReduceMotion.bind(this);
   }
 
   get template() {
@@ -36,27 +36,27 @@ class Nav extends HTMLElement {
           </li>
         </ul>
       </nav>
-    `
+    `;
   }
 
   toggleReduceMotion() {
-    document.getElementById('aria-live-feedback').ariaLive = 'polite'
-    document.getElementById('aria-live-feedback').ariaHidden = false
+    document.getElementById('aria-live-feedback').ariaLive = 'polite';
+    document.getElementById('aria-live-feedback').ariaHidden = false;
     setTimeout(() => {
-      document.getElementById('aria-live-feedback').ariaLive = 'off'
-      document.getElementById('aria-live-feedback').ariaHidden = true
-    }, 1000)
+      document.getElementById('aria-live-feedback').ariaLive = 'off';
+      document.getElementById('aria-live-feedback').ariaHidden = true;
+    }, 1000);
 
-    this.userPreferMotionReduce = !this.userPreferMotionReduce
-    localStorage.setItem('motionReduce', this.userPreferMotionReduce)
-    document.documentElement.classList.toggle('motion-reduce', this.userPreferMotionReduce)
-    render(this.template, this)
+    this.userPreferMotionReduce = !this.userPreferMotionReduce;
+    localStorage.setItem('motionReduce', this.userPreferMotionReduce);
+    document.documentElement.classList.toggle('motion-reduce', this.userPreferMotionReduce);
+    render(this.template, this);
   }
 
   connectedCallback() {
-    changeLangObserver(() => render(this.template, this))
-    render(this.template, this)
+    changeLangObserver(() => render(this.template, this));
+    render(this.template, this);
   }
 }
 
-customElements.define('nav-wc', Nav)
+customElements.define('nav-wc', Nav);

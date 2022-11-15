@@ -1,22 +1,22 @@
-import { queryByText, fireEvent } from '@testing-library/dom'
-import { fixture, html } from '@open-wc/testing-helpers'
+import { queryByText, fireEvent } from '@testing-library/dom';
+import { fixture, html } from '@open-wc/testing-helpers';
 
-import '../nav.js'
+import '../nav.js';
 
-const render = () => fixture(html`<nav-wc></nav-wc>`)
+const render = () => fixture(html`<nav-wc></nav-wc>`);
 
 describe('Nav test suite', () => {
   it('Should render sections links', async () => {
-    const component = await render()
-    const section = queryByText(component, 'Education')
-    expect(section).toBeDefined()
-  })
+    const component = await render();
+    const section = queryByText(component, 'Education');
+    expect(section).toBeDefined();
+  });
   it('Should render sections links', async () => {
-    window.setTimeout = jest.fn((cb) => cb())
-    const component = await render()
-    const ariaLiveFeedback = component.querySelector('#aria-live-feedback')
-    fireEvent.click(queryByText(component, 'Deactivate animations'))
-    expect(ariaLiveFeedback.ariaLive).toBe('off')
-    expect(queryByText(component, 'Deactivate animations')).toBeNull()
-  })
-})
+    window.setTimeout = jest.fn((cb) => cb());
+    const component = await render();
+    const ariaLiveFeedback = component.querySelector('#aria-live-feedback');
+    fireEvent.click(queryByText(component, 'Deactivate animations'));
+    expect(ariaLiveFeedback.ariaLive).toBe('off');
+    expect(queryByText(component, 'Deactivate animations')).toBeNull();
+  });
+});
