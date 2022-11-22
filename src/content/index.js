@@ -37,6 +37,8 @@ const contents = {
       motionFullFeedback: 'Done! The animations are back',
       goTo: 'Skip to',
       contact: 'Contact',
+      copyEmail: 'Copy e-mail',
+      copied: 'Copied!',
     },
     experience: {
       title: 'Experience',
@@ -73,6 +75,8 @@ const contents = {
       motionFullFeedback: 'Listo! Volvieron las animaciones',
       goTo: 'Saltar a',
       contact: 'Contacto',
+      copyEmail: 'Copiar email',
+      copied: 'Copiado!',
     },
     experience: {
       title: 'Experiencia',
