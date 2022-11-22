@@ -38,7 +38,7 @@ body {
   }
 
   .link {
-    @apply -ml-2 p-2 opacity-75 font-sans hover:underline active:italic hover:opacity-100;
+    @apply -ml-2 p-2 opacity-75 font-sans hover:underline active:italic hover:opacity-100 font-light;
   }
 
   .h2 {
