@@ -12,6 +12,10 @@ class Nav extends HTMLElement {
     this.toggleReduceMotion = this.toggleReduceMotion.bind(this);
   }
 
+  openEmail() {
+    window.location.assign("mailto:emiliacabralb@gmail.com");
+  }
+
   get template() {
     return html`
       <nav class="md:fixed w-52 print:hidden p-3 -mx-3" aria-label="Menu" tabindex="0">
@@ -26,6 +30,11 @@ class Nav extends HTMLElement {
                 </li>
               `,
           )}
+          <li>
+            <a class="link relative" role="button" @click=${this.openEmail}>
+              ${getContent('nav.contact')}
+            </a>
+          </li>
           <li>
             <button class="visible-on-focus link focus:link" @click=${this.toggleReduceMotion}>
               ${this.userPreferMotionReduce ? getContent('nav.motionReduced') : getContent('nav.motionFull')}

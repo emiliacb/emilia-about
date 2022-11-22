@@ -11,12 +11,19 @@ describe('Nav test suite', () => {
     const section = queryByText(component, 'Education');
     expect(section).toBeDefined();
   });
-  it('Should render sections links', async () => {
+  it('Should deactivate animations', async () => {
     window.setTimeout = jest.fn((cb) => cb());
     const component = await render();
     const ariaLiveFeedback = component.querySelector('#aria-live-feedback');
     fireEvent.click(queryByText(component, 'Deactivate animations'));
     expect(ariaLiveFeedback.ariaLive).toBe('off');
     expect(queryByText(component, 'Deactivate animations')).toBeNull();
+  });
+  it('Should render sections links', async () => {
+    const component = await render();
+    delete window.location;
+    window.location = { assign: jest.fn() };
+    fireEvent.click(queryByText(component, 'Contact'));
+    expect(window.location.assign).toBeCalledWith('mailto:emiliacabralb@gmail.com');
   });
 });

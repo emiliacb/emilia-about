@@ -12,8 +12,7 @@ describe('Contents utils test suite', () => {
   describe('toggleLanguage', () => {
     it('Should change de language', () => {
       const oldPushState = window.history.pushState;
-      window.history.pushState = jest.fn().mockImplementation(oldPushState);
-
+      window.history.pushState = jest.fn(oldPushState);
       toggleLanguage();
       expect(window.history.pushState).toHaveBeenLastCalledWith({}, '', '/es');
       expect(document.documentElement.getAttribute('lang')).toBe('es');
