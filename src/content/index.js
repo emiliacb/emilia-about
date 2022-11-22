@@ -36,6 +36,7 @@ const contents = {
       motionReducedFeedback: 'Done! Now we have less animations',
       motionFullFeedback: 'Done! The animations are back',
       goTo: 'Skip to',
+      contact: 'Contact',
     },
     experience: {
       title: 'Experience',
@@ -71,6 +72,7 @@ const contents = {
       motionReducedFeedback: 'Listo! Ahora hay menos animaciones',
       motionFullFeedback: 'Listo! Volvieron las animaciones',
       goTo: 'Saltar a',
+      contact: 'Contacto',
     },
     experience: {
       title: 'Experiencia',
