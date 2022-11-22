@@ -31,7 +31,7 @@ class Nav extends HTMLElement {
               `,
           )}
           <li>
-            <a class="link relative" role="button" @click=${this.openEmail}>
+            <a class="link relative" role="button" @click=${this.openEmail} href="">
               ${getContent('nav.contact')}
             </a>
           </li>
