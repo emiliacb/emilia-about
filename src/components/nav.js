@@ -14,8 +14,7 @@ class Nav extends HTMLElement {
     this.isCopySuccesfull = false;
 
     this.toggleReduceMotion = this.toggleReduceMotion.bind(this);
-    this.showCopy = this.showCopy.bind(this);
-    this.hideCopy = this.hideCopy.bind(this);
+    this.resetCopyButton = this.resetCopyButton.bind(this);
     this.handleCopy = this.handleCopy.bind(this);
   }
 
@@ -23,13 +22,7 @@ class Nav extends HTMLElement {
     window.location.assign('mailto:emiliacabralb@gmail.com');
   }
 
-  showCopy() {
-    this.isCopyIconVisible = true;
-    render(this.template, this);
-  }
-
-  hideCopy() {
-    this.isCopyIconVisible = false;
+  resetCopyButton() {
     this.isCopySuccesfull = false;
     render(this.template, this);
   }
@@ -47,6 +40,15 @@ class Nav extends HTMLElement {
   get template() {
     return html`
       <style>
+        .list-item-copy .button-copy {
+          display: none;
+        }
+
+        .list-item-copy:focus-visible .button-copy,
+        .list-item-copy:hover .button-copy {
+          display: flex;
+        }
+
         .button-copy:focus-visible .button-copy-icon__text,
         .button-copy:hover .button-copy-icon__text {
           display: block;
@@ -66,9 +68,9 @@ class Nav extends HTMLElement {
               `,
           )}
           <!-- TODO mover a un componente nuevo -->
-          <li class="flex items-center h-6" @mouseover=${this.showCopy} @mouseleave=${this.hideCopy}>
+          <li class="list-item-copy li flex items-center h-6" @mouseleave=${this.resetCopyButton}>
             <a class="link opacity-100 font-normal" role="button" @click=${this.openEmail} href=""> ${getContent('nav.contact')} </a>
-            <button class="button-copy relative h-8 items-center px-2 w-8 hidden lg:flex" @click=${this.handleCopy} @focus=${this.showCopy} @blur=${this.hideCopy}>
+            <button data-testid="button-copy" class="button-copy relative h-8 items-center px-2 w-8 lg:flex" @click=${this.handleCopy} @blur=${this.resetCopyButton}>
               ${!this.isCopySuccesfull
                 ? html`
                     <svg
@@ -78,7 +80,8 @@ class Nav extends HTMLElement {
                       stroke-width="1.5"
                       stroke="currentColor"
                       aria-hidden="true"
-                      class="w-4 h-4 ${!this.isCopyIconVisible ? 'hidden' : ''}"
+                      class="w-4 h-4"
+                      data-testid="button-icon-success"
                     >
                       <path
                         stroke-linecap="round"
@@ -95,7 +98,8 @@ class Nav extends HTMLElement {
                       stroke-width="1.5"
                       stroke="currentColor"
                       aria-hidden="true"
-                      class="w-4 h-4 text-green-700 dark:text-green-300 ${!this.isCopyIconVisible ? 'hidden' : ''}"
+                      class="w-4 h-4 text-cyan-700 dark:text-emerald-200"
+                      data-testid="button-icon-clipboard"
                     >
                       <path
                         stroke-linecap="round"
@@ -104,9 +108,8 @@ class Nav extends HTMLElement {
                       />
                     </svg>
                   `}
-              <span class="absolute text-left left-8 w-20 font-light hidden text-xs button-copy-icon__text">
-                ${this.isCopyIconVisible && this.isCopySuccesfull ? getContent('nav.copied') : ''}
-                ${this.isCopyIconVisible && !this.isCopySuccesfull ? getContent('nav.copyEmail') : ''}
+              <span class="button-copy-icon__text absolute text-left left-8 w-20 font-light text-xs hidden">
+                ${!this.isCopySuccesfull ? getContent('nav.copyEmail') : getContent('nav.copied')}
               </span>
             </button>
           </li>
