@@ -5,4 +5,5 @@ module.exports = {
   moduleNameMapper: {
     '.md\\?raw': 'jest-raw-loader',
   },
+  setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
 };
