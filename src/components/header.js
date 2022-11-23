@@ -42,7 +42,7 @@ class Header extends HTMLElement {
           </button>
         </div>
       </header>
-      <span class="container -mt-12 hidden print:block italic">emiliacabralb@gmail.com</span>
+      <span class="container -mt-12 hidden print:block italic">emiliaborg.ar</span>
     `;
   }
 
