@@ -1,0 +1,21 @@
+.list-item-copy .button-copy {
+  @apply opacity-0;
+}
+
+.list-item-copy .link:focus-visible ~ .button-copy {
+  @apply opacity-100;
+}
+
+.button-copy:focus-visible .button-copy-icon__text {
+  @apply opacity-100;
+}
+
+@media (hover: hover) {
+  .list-item-copy:hover .button-copy {
+    @apply opacity-100;
+  }
+
+  .button-copy:hover .button-copy-icon__text {
+    @apply opacity-100;
+  }
+}
