@@ -39,22 +39,6 @@ class Nav extends HTMLElement {
 
   get template() {
     return html`
-      <style>
-        .list-item-copy .button-copy {
-          display: none;
-        }
-
-        .list-item-copy:focus-visible .button-copy,
-        .list-item-copy:hover .button-copy {
-          display: flex;
-        }
-
-        .button-copy:focus-visible .button-copy-icon__text,
-        .button-copy:hover .button-copy-icon__text {
-          display: block;
-        }
-      </style>
-
       <nav class="md:fixed w-52 print:hidden p-3 -mx-3" aria-label="Menu" tabindex="0">
         <ul class="flex flex-col gap-3">
           ${SECTIONS.map(
@@ -70,7 +54,12 @@ class Nav extends HTMLElement {
           <!-- TODO mover a un componente nuevo -->
           <li class="list-item-copy li flex items-center h-6" @mouseleave=${this.resetCopyButton}>
             <a class="link opacity-100 font-normal" role="button" @click=${this.openEmail} href=""> ${getContent('nav.contact')} </a>
-            <button data-testid="button-copy" class="button-copy relative h-8 items-center px-2 w-8 lg:flex" @click=${this.handleCopy} @blur=${this.resetCopyButton}>
+            <button
+              data-testid="button-copy"
+              class="button-copy relative h-8 items-center px-2 w-8 flex focus-visible:opacity-100"
+              @click=${this.handleCopy}
+              @blur=${this.resetCopyButton}
+            >
               ${!this.isCopySuccesfull
                 ? html`
                     <svg
@@ -108,7 +97,7 @@ class Nav extends HTMLElement {
                       />
                     </svg>
                   `}
-              <span class="button-copy-icon__text absolute text-left left-8 w-20 font-light text-xs hidden">
+              <span class="button-copy-icon__text absolute text-left left-8 w-20 font-light text-xs block opacity-0">
                 ${!this.isCopySuccesfull ? getContent('nav.copyEmail') : getContent('nav.copied')}
               </span>
             </button>
