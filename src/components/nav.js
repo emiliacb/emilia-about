@@ -9,11 +9,9 @@ import { getContent, changeLangObserver } from '../utils/contents';
 class Nav extends HTMLElement {
   constructor() {
     super();
-    this.userPreferMotionReduce = document.documentElement.classList.contains('motion-reduced');
     this.isCopyIconVisible = false;
     this.isCopySuccesfull = false;
 
-    this.toggleReduceMotion = this.toggleReduceMotion.bind(this);
     this.resetCopyButton = this.resetCopyButton.bind(this);
     this.handleCopy = this.handleCopy.bind(this);
   }
@@ -59,6 +57,7 @@ class Nav extends HTMLElement {
               class="button-copy relative h-8 items-center px-2 w-8 flex focus-visible:opacity-100"
               @click=${this.handleCopy}
               @blur=${this.resetCopyButton}
+              aria-labelledby="copy-btn-text"
             >
               ${!this.isCopySuccesfull
                 ? html`
@@ -97,36 +96,14 @@ class Nav extends HTMLElement {
                       />
                     </svg>
                   `}
-              <span class="button-copy-icon__text absolute text-left left-8 w-20 font-light text-xs block opacity-0">
+              <span id="copy-btn-text" class="button-copy-icon__text absolute text-left left-8 w-20 font-light text-xs block opacity-0">
                 ${!this.isCopySuccesfull ? getContent('nav.copyEmail') : getContent('nav.copied')}
               </span>
             </button>
           </li>
-          <li>
-            <button class="visible-on-focus link focus:link" @click=${this.toggleReduceMotion}>
-              ${this.userPreferMotionReduce ? getContent('nav.motionReduced') : getContent('nav.motionFull')}
-            </button>
-            <span class="sr-only" aria-live="off" id="aria-live-feedback">
-              ${this.userPreferMotionReduce ? getContent('nav.motionReducedFeedback') : getContent('nav.motionFullFeedback')}
-            </span>
-          </li>
         </ul>
       </nav>
     `;
-  }
-
-  toggleReduceMotion() {
-    document.getElementById('aria-live-feedback').ariaLive = 'polite';
-    document.getElementById('aria-live-feedback').ariaHidden = false;
-    setTimeout(() => {
-      document.getElementById('aria-live-feedback').ariaLive = 'off';
-      document.getElementById('aria-live-feedback').ariaHidden = true;
-    }, 1000);
-
-    this.userPreferMotionReduce = !this.userPreferMotionReduce;
-    localStorage.setItem('motionReduce', this.userPreferMotionReduce);
-    document.documentElement.classList.toggle('motion-reduce', this.userPreferMotionReduce);
-    render(this.template, this);
   }
 
   connectedCallback() {

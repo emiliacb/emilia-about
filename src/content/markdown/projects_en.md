@@ -4,7 +4,7 @@
 
 #### Fullstack development
 
-<a href="https://www.estudiosande.com/" target="_blank" > 🔗 Link</a>
+<a href="https://www.estudiosande.com/" target="_blank"  aria-label="Go to Estudio Sande webpage"> 🔗 Link</a>
 
 Developed the full webpage with server side rendering in Next with focus in performance. Added a simple post system based in md files.
 
@@ -14,7 +14,7 @@ Developed the full webpage with server side rendering in Next with focus in perf
 
 #### Fullstack development
 
-<a href="https://awkbit.com/" target="_blank" > 🔗 Link</a>
+<a href="https://awkbit.com/" target="_blank" aria-label="Go to Awkbit webpage" > 🔗 Link</a>
 
 As contractor developed most of the homepage of the company, with server side rendering and a CMS backend.
 
@@ -25,7 +25,7 @@ As contractor developed most of the homepage of the company, with server side re
 #### Designer
 
 <a href="
-https://www.figma.com/file/gG4MdH9nPpLsnrYHBsZW1P/CHA" target="_blank" > 🔗 Link</a>
+https://www.figma.com/file/gG4MdH9nPpLsnrYHBsZW1P/CHA" target="_blank" aria-label="Go to CHA webpage design" > 🔗 Link</a>
 
 Designed their new homepage using Figma.
 
@@ -35,8 +35,8 @@ Designed their new homepage using Figma.
 
 #### Portrait
 
-<a href="https://github.com/Em3c2/portraitCSSPURE" target="_blank" > 🔗 Link</a>
+<a href="https://github.com/Em3c2/portraitCSSPURE" target="_blank" aria-label="Go to portrait in pure CSS" > 🔗 Link</a>
 
 #### Starship in one div
 
-<a href="https://codesandbox.io/s/csstartship-98bn2?file=/index.html" target="_blank" > 🔗 Link</a>
+<a href="https://codesandbox.io/s/csstartship-98bn2?file=/index.html" target="_blank" aria-label="Go to starship in pure CSS" > 🔗 Link</a>
