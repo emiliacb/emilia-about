@@ -45,7 +45,7 @@ class MouseFollower extends HTMLElement {
         viewBox="0 0 186 200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="mouse-follower__outside fixed transition-all ease-in duration-200 pointer-events-none animate-pulse"
+        class="mouse-follower__outside fixed transition-all ease-out duration-200 pointer-events-none animate-pulse"
       >
         <path
           d="M185.5 100C185.5 127.527 177.831 152.408 163.322 170.397C148.821 188.374 127.465 199.5 100 199.5C45.0477 199.5 0.5 154.952 0.5 100C0.5 45.0477 45.0477 0.5 100 0.5C127.465 0.5 148.821 11.6259 163.322 29.6032C177.831 47.5921 185.5 72.4734 185.5 100Z"
@@ -83,12 +83,12 @@ class MouseFollower extends HTMLElement {
       render(this.template, this);
     };
 
-    window.onscroll = () => {
+    window.onscroll = _.throttle(() => {
       this.scrolling = true;
       this.x = this.lastX;
       this.y = this.lastY;
       render(this.template, this);
-    };
+    }, 50);
 
     anime({
       targets: '.mouse-follower__outside path',
