@@ -61,7 +61,7 @@ body {
   }
   
   .visible-on-focus {
-    @apply sr-only focus:not-sr-only;
+    @apply sr-only focus-visible:not-sr-only;
   }
   
   .custom-prose {

@@ -29,12 +29,13 @@ const contents = {
       languageLabel: 'Change language to english',
       languageFeedback: 'Now the language is english',
       darkModeLabel: 'Toggle dark theme',
-    },
-    nav: {
       motionReduced: 'Activate animations',
       motionFull: 'Deactivate animations',
       motionReducedFeedback: 'Done! Now we have less animations',
       motionFullFeedback: 'Done! The animations are back',
+      skip: 'Skip to content',
+    },
+    nav: {
       goTo: 'Skip to',
       contact: 'Contact',
       copyEmail: 'Copy e-mail',
@@ -67,12 +68,13 @@ const contents = {
       languageLabel: 'Cambiar lenguaje a español',
       languageFeedback: 'Ahora el lenguaje es español',
       darkModeLabel: 'Cambiar tema oscuro',
-    },
-    nav: {
       motionFull: 'Activar animaciones',
       motionReduced: 'Desactivar animaciones',
       motionReducedFeedback: 'Listo! Ahora hay menos animaciones',
       motionFullFeedback: 'Listo! Volvieron las animaciones',
+      skip: 'Saltar a contenido',
+    },
+    nav: {
       goTo: 'Saltar a',
       contact: 'Contacto',
       copyEmail: 'Copiar email',

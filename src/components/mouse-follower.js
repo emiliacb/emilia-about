@@ -1,13 +1,14 @@
 /* Dependencies */
 import { html, render } from 'lit-html';
 import { styleMap } from 'lit/directives/style-map.js';
+import anime from 'animejs';
 import _ from 'lodash';
 
 class MouseFollower extends HTMLElement {
   constructor() {
     super();
-    this.x = 0;
-    this.y = 0;
+    this.x = window && window.innerWidth / 2;
+    this.y = window && window.innerHeight / 2;
     this.h = 70;
     this.w = 70;
     this.lastX = 0;
@@ -37,13 +38,24 @@ class MouseFollower extends HTMLElement {
 
   get template() {
     return html`
-      <div
+      <svg
         style=${styleMap(this.stylesOutside)}
-        class="fixed rounded-full border border-stone-300 transition-all ease-in duration-200 mix-blend-difference pointer-events-none"
-      ></div>
+        width="186"
+        height="200"
+        viewBox="0 0 186 200"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="mouse-follower__outside fixed transition-all ease-in duration-200 pointer-events-none animate-spin"
+      >
+        <path
+          d="M185.5 100C185.5 127.527 177.831 152.408 163.322 170.397C148.821 188.374 127.465 199.5 100 199.5C45.0477 199.5 0.5 154.952 0.5 100C0.5 45.0477 45.0477 0.5 100 0.5C127.465 0.5 148.821 11.6259 163.322 29.6032C177.831 47.5921 185.5 72.4734 185.5 100Z"
+          stroke="currentColor"
+        />
+      </svg>
+
       <div
         style=${styleMap(this.stylesDot)}
-        class="fixed rounded-full bg-stone-300 transition-all ease-out duration-100 mix-blend-difference pointer-events-none"
+        class="fixed rounded-full bg-stone-300 transition-all ease-out duration-100 mix-blend-difference pointer-events-none ${this.scrolling ? 'animate-ping' : ''}"
       ></div>
     `;
   }
@@ -53,7 +65,6 @@ class MouseFollower extends HTMLElement {
 
     window.onmousemove = _.throttle((e) => {
       const { clientX: x, clientY: y } = e;
-      console.log(e);
       this.scrolling = false;
       this.x = x;
       this.y = y;
@@ -78,6 +89,39 @@ class MouseFollower extends HTMLElement {
       this.y = this.lastY;
       render(this.template, this);
     };
+
+    anime({
+      targets: '.mouse-follower__outside path',
+      d: [
+        {
+          value: [
+            `M186.5 100C186.5 154.952 141.952 199.5 87 199.5C59.5347 199.5 38.0527 188.374 23.4272 170.395C8.79286 152.406 1 127.525 
+            1 100C1 72.4753 8.79286 47.5942 23.4272 29.6049C38.0527 11.6263 59.5347 0.5 87 0.5C141.952 0.5 186.5 45.0477 186.5 100Z`,
+          ],
+        },
+      ],
+      easing: 'linear',
+      duration: anime.random(600, 2000),
+      loop: true,
+      direction: 'alternate',
+      update: () => render(this.template, this),
+    });
+
+    anime({
+      targets: '.mouse-follower__outside',
+      easing: 'linear',
+      duration: 300,
+      direction: 'alternate',
+      loop: true,
+      keyframes: [
+        {
+          rotate: -1000,
+        },
+        {
+          rotate: 1000,
+        },
+      ],
+    });
   }
 }
 

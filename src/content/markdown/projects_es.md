@@ -4,7 +4,7 @@
 
 #### Desarrollo fullstack
 
-<a href="https://www.estudiosande.com/" target="_blank" >🔗 Enlace</a>
+<a href="https://www.estudiosande.com/" target="_blank" aria-label="Ir a la web de Estudio Sande" >🔗 Enlace</a>
 
 Desarrollo de página web completa con renderizado del lado del servidor con Next y un enfoque en el rendimiento. Se agregó un sistema de posts simple basado en archivos md.
 
@@ -14,7 +14,7 @@ Desarrollo de página web completa con renderizado del lado del servidor con Nex
 
 #### Desarrollo fullstack
 
-<a href="https://awkbit.com/" target="_blank" >🔗 Enlace</a>
+<a href="https://awkbit.com/" target="\_blank" aria-label="Ir a la web de Awkbit" >🔗 Enlace</a>
 
 Como contractor desarrollé la mayor parte de la homepage de la empresa, con renderizado del lado del servidor y un CMS.
 
@@ -25,7 +25,7 @@ Como contractor desarrollé la mayor parte de la homepage de la empresa, con ren
 #### Diseño UI
 
 <a href="
-https://www.figma.com/file/gG4MdH9nPpLsnrYHBsZW1P/CHA" target="_blank" >🔗 Enlace</a>
+https://www.figma.com/file/gG4MdH9nPpLsnrYHBsZW1P/CHA" target="_blank" aria-label="Ir al diseño de la web de la CHA">🔗 Enlace</a>
 
 Diseño de la homepage de la ONG.
 
@@ -35,8 +35,8 @@ Diseño de la homepage de la ONG.
 
 #### Retrato
 
-<a href="https://github.com/Em3c2/portraitCSSPURE" target="_blank" >🔗 Enlace</a>
+<a href="https://github.com/Em3c2/portraitCSSPURE" target="_blank" aria-label="Ir al retrato en CSS puro">🔗 Enlace</a>
 
 #### Starship en un solo div
 
-<a href="https://codesandbox.io/s/csstartship-98bn2?file=/index.html" target="_blank" >🔗 Enlace</a>
+<a href="https://codesandbox.io/s/csstartship-98bn2?file=/index.html" target="_blank" aria-label="Ir a la starship en CSS puro">🔗 Enlace</a>

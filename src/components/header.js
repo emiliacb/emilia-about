@@ -6,9 +6,31 @@ import { toggleDarkMode } from '../utils';
 import { toggleLanguage, changeLangObserver, getContent } from '../utils/contents';
 
 class Header extends HTMLElement {
+  constructor() {
+    super();
+    this.userPreferMotionReduce = document.documentElement.classList.contains('motion-reduced');
+    this.toggleReduceMotion = this.toggleReduceMotion.bind(this);
+  }
+
   get template() {
     return html`
       <header class="container relative justify-between items-center">
+        <a
+          role="button"
+          class="visible-on-focus bg-black dark:bg-white text-white dark:text-black focus-visible:p-5 focus-visible:absolute"
+          href="#experience"
+        >
+          ${getContent('header.skip')}
+        </a>
+        <button
+          class="visible-on-focus bg-black dark:bg-white text-white dark:text-black focus-visible:p-5 focus-visible:absolute"
+          @click=${this.toggleReduceMotion}
+        >
+          ${this.userPreferMotionReduce ? getContent('header.motionReduced') : getContent('header.motionFull')}
+        </button>
+        <span class="sr-only" aria-live="off" id="aria-live-feedback">
+          ${this.userPreferMotionReduce ? getContent('header.motionReducedFeedback') : getContent('header.motionFullFeedback')}
+        </span>
         <h1 tabindex="0" class="text-xl font-serif p-3 -ml-3 print:hidden">Emilia <span aria-hidden="true">/</span><span lang="en">About</span></h1>
         <h1 tabindex="0" class="hidden text-xl font-serif p-3 -ml-3 print:block print:text-3xl">Emilia Cabral - Fullstack Developer</h1>
         <div class="flex">
@@ -24,8 +46,9 @@ class Header extends HTMLElement {
           <button
             @click=${toggleDarkMode}
             class="print:hidden grid place-content-center w-12 h-12 align-middle focus:rounded-full"
-            aria-label="Toggle dark mode"
+            aria-label=${getContent('header.darkModeLabel')}
             type="button"
+            aria-live="polite"
           >
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 dark:hidden">
               <path
@@ -44,6 +67,20 @@ class Header extends HTMLElement {
       </header>
       <span class="container -mt-12 hidden print:block italic">emiliaborg.ar</span>
     `;
+  }
+
+  toggleReduceMotion() {
+    document.getElementById('aria-live-feedback').ariaLive = 'polite';
+    document.getElementById('aria-live-feedback').ariaHidden = false;
+    setTimeout(() => {
+      document.getElementById('aria-live-feedback').ariaLive = 'off';
+      document.getElementById('aria-live-feedback').ariaHidden = true;
+    }, 1000);
+
+    this.userPreferMotionReduce = !this.userPreferMotionReduce;
+    localStorage.setItem('motionReduce', this.userPreferMotionReduce);
+    document.documentElement.classList.toggle('motion-reduce', this.userPreferMotionReduce);
+    render(this.template, this);
   }
 
   connectedCallback() {
