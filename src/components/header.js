@@ -36,7 +36,7 @@ class Header extends HTMLElement {
         <div class="flex">
           <button
             @click=${toggleLanguage}
-            class="print:hidden grid place-content-center w-12 h-12 align-middle focus:rounded-full"
+            class="print:hidden grid place-content-center w-12 h-12 align-middle focus:rounded-full transition-transform duration-300 hover:scale-125"
             aria-label=${getContent('header.languageLabel')}
             type="button"
           >
@@ -45,7 +45,7 @@ class Header extends HTMLElement {
           </button>
           <button
             @click=${toggleDarkMode}
-            class="print:hidden grid place-content-center w-12 h-12 align-middle focus:rounded-full"
+            class="print:hidden grid place-content-center w-12 h-12 align-middle focus:rounded-full transition-transform duration-300 hover:scale-125"
             aria-label=${getContent('header.darkModeLabel')}
             type="button"
             aria-live="polite"

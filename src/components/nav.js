@@ -54,7 +54,7 @@ class Nav extends HTMLElement {
             <a class="link opacity-100 font-normal" role="button" @click=${this.openEmail} href=""> ${getContent('nav.contact')} </a>
             <button
               data-testid="button-copy"
-              class="button-copy relative h-8 items-center px-2 w-8 flex focus-visible:opacity-100"
+              class="button-copy relative h-8 items-center px-2 w-8 flex focus-visible:opacity-100 transition-transform duration-100"
               @click=${this.handleCopy}
               @blur=${this.resetCopyButton}
               aria-labelledby="copy-btn-text"
@@ -96,7 +96,7 @@ class Nav extends HTMLElement {
                       />
                     </svg>
                   `}
-              <span id="copy-btn-text" class="button-copy-icon__text absolute text-left left-8 w-20 font-light text-xs block opacity-0">
+              <span id="copy-btn-text" class="button-copy-icon__text absolute text-left left-8 w-20 font-light text-xs block opacity-0 transition-all duration-100">
                 ${!this.isCopySuccesfull ? getContent('nav.copyEmail') : getContent('nav.copied')}
               </span>
             </button>
