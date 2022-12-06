@@ -31,8 +31,10 @@ class Header extends HTMLElement {
         <span class="sr-only" aria-live="off" id="aria-live-feedback">
           ${this.userPreferMotionReduce ? getContent('header.motionReducedFeedback') : getContent('header.motionFullFeedback')}
         </span>
-        <h1 tabindex="0" class="text-xl font-serif p-3 -ml-3 print:hidden">Emilia <span aria-hidden="true">/</span><span lang="en">About</span></h1>
-        <h1 tabindex="0" class="hidden text-xl font-serif p-3 -ml-3 print:block print:text-3xl">Emilia Cabral - Fullstack Developer</h1>
+        <a href="/">
+          <h1 tabindex="0" class="text-xl font-serif p-3 -ml-3 print:hidden">Emilia <span aria-hidden="true">/</span><span lang="en">About</span></h1>
+          <h1 tabindex="0" class="hidden text-xl font-serif p-3 -ml-3 print:block print:text-3xl">Emilia Cabral - Fullstack Developer</h1>
+        </a>
         <div class="flex">
           <button
             @click=${toggleLanguage}
