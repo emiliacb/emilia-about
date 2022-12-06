@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@logtail/node": "^0.1.12",
+    "@vaadin/router": "^1.7.4",
     "animejs": "^3.2.1",
     "jest-raw-loader": "^1.0.1",
     "lit-html": "^2.4.0",
