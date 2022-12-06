@@ -1,6 +1,5 @@
 /* Dependencies */
 import { html, render } from 'lit-html';
-import { times } from 'lodash';
 
 /* Utils */
 import { SECTIONS } from '../utils/constants';
