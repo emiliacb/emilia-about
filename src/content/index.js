@@ -34,6 +34,7 @@ const contents = {
       motionReducedFeedback: 'Done! Now we have less animations',
       motionFullFeedback: 'Done! The animations are back',
       skip: 'Skip to content',
+      linkHome: 'Home',
     },
     nav: {
       goTo: 'Skip to',
@@ -73,6 +74,7 @@ const contents = {
       motionReducedFeedback: 'Listo! Ahora hay menos animaciones',
       motionFullFeedback: 'Listo! Volvieron las animaciones',
       skip: 'Saltar a contenido',
+      linkHome: 'Inicio',
     },
     nav: {
       goTo: 'Saltar a',
