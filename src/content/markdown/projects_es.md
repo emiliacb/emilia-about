@@ -2,9 +2,7 @@
 
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Febrero 2022 - Mayo 2022</p>
 
-#### Desarrollo fullstack
-
-<a href="https://www.estudiosande.com/" target="_blank" aria-label="Ir a la web de Estudio Sande" >🔗 Enlace</a>
+<a href="https://www.estudiosande.com/" target="_blank" aria-label="Ir a la web de Estudio Sande" > Desarrollo fullstack </a>
 
 Desarrollo de página web completa con renderizado del lado del servidor con Next y un enfoque en el rendimiento. Se agregó un sistema de posts simple basado en archivos md.
 
@@ -12,9 +10,7 @@ Desarrollo de página web completa con renderizado del lado del servidor con Nex
 
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Septiembre 2020 - Febrero 2021</p>
 
-#### Desarrollo fullstack
-
-<a href="https://awkbit.com/" target="\_blank" aria-label="Ir a la web de Awkbit" >🔗 Enlace</a>
+<a href="https://awkbit.com/" target="\_blank" aria-label="Ir a la web de Awkbit" >Desarrollo fullstack</a>
 
 Como contractor desarrollé la mayor parte de la homepage de la empresa, con renderizado del lado del servidor y un CMS.
 
@@ -22,10 +18,8 @@ Como contractor desarrollé la mayor parte de la homepage de la empresa, con ren
 
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Abril 2021</p>
 
-#### Diseño UI
-
 <a href="
-https://www.figma.com/file/gG4MdH9nPpLsnrYHBsZW1P/CHA" target="_blank" aria-label="Ir al diseño de la web de la CHA">🔗 Enlace</a>
+https://www.figma.com/file/gG4MdH9nPpLsnrYHBsZW1P/CHA" target="_blank" aria-label="Ir al diseño de la web de la CHA">Diseño UI</a>
 
 Diseño de la homepage de la ONG.
 
@@ -33,10 +27,6 @@ Diseño de la homepage de la ONG.
 
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Agosto 2020</p>
 
-#### Retrato
+<a href="https://github.com/Em3c2/portraitCSSPURE" target="_blank" aria-label="Ir al retrato en CSS puro">Retrato</a>
 
-<a href="https://github.com/Em3c2/portraitCSSPURE" target="_blank" aria-label="Ir al retrato en CSS puro">🔗 Enlace</a>
-
-#### Starship en un solo div
-
-<a href="https://codesandbox.io/s/csstartship-98bn2?file=/index.html" target="_blank" aria-label="Ir a la starship en CSS puro">🔗 Enlace</a>
+<a href="https://codesandbox.io/s/csstartship-98bn2?file=/index.html" target="_blank" aria-label="Ir a la starship en CSS puro">Starship en un solo div</a>

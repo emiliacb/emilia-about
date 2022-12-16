@@ -67,7 +67,7 @@ body {
   .custom-prose {
     @apply prose dark:prose-invert prose-stone prose-headings:dark:text-stone-100 prose-h4:pb-0 prose-li:p-0;
     @apply prose-headings:transition prose-headings:duration-1000 prose-strong:transition prose-strong:duration-1000;
-    @apply prose-a:font-light prose-a:no-underline prose-a:opacity-75 prose-a:p-2 prose-a:-ml-2;
+    @apply prose-a:font-light prose-a:no-underline prose-a:p-2 prose-a:-ml-2 hover:prose-a:underline prose-a:text-cyan-700 dark:prose-a:text-orange-200;
     @apply transition duration-1000;
     @apply print:!text-black;
   }
@@ -90,4 +90,12 @@ h3 {
 
 h4 {
   @apply h4;
+}
+
+p {
+  @apply after:!hidden before:!hidden not-italic font-light; 
+} 
+
+blockquote {
+  @apply !not-italic font-light !border-l-2;
 }
