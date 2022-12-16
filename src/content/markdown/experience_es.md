@@ -22,3 +22,15 @@
 - **Comunicación** con clientes de diferente índole directamente en lenguaje no técnico.
 - **Aprendizaje** de tecnologías que requerían los clientes como Vue, Gatsby, Strapi y Tailwind, en un corto período de tiempo, a veces en unos pocos días.
 - **Trabajos asíncronos** con un alto nivel de autonomía y responsabilidad.
+
+### Tutora en Coderhouse
+
+<p style="absolute; margin-top: -2rem; font-size: 13px;">Marzo 2021 - Mayo 2021</p>
+
+- **Mentorias** y **Clases** para más de 20 estudiantes. Los alumnos me dieron un feedback de 5 estrellas.
+
+### Tutora en Soy Henry 
+
+<p style="absolute; margin-top: -2rem; font-size: 13px;">Agosto 2020 - Octubre 2020</p>
+
+- **Mentorias** y **Clases** para más de 20 estudiantes.
