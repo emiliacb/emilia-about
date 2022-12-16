@@ -20,3 +20,15 @@
 - **Communicated** with clients of different kinds directly in non-technical language.
 - **Learned** how to use technologies such as Vue, Gatsby, Strapi, and Tailwind that were required by the clients, in a short period of time, sometimes in a few days.
 - **Asynchronous** jobs with a high level of autonomy and accountability.
+
+### Tutor in Coderhouse 
+
+<p style="absolute; margin-top: -2rem; font-size: 13px;">March 2021 - May 2021</p>
+
+- **Mentorships** and **classes** for over 20 students. The students gave me a 5-star feedback.
+
+### Tutor in Soy Henry 
+
+<p style="absolute; margin-top: -2rem; font-size: 13px;">August 2020 - October 2020</p>
+
+- **Mentorships** and **classes** for over 40 students.
