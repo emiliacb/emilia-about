@@ -8,9 +8,9 @@ class GithubButton extends HTMLElement {
         href="https://github.com/Em3c2/emilia-about"
         target="_blank"
         rel="noopener noreferrer"
-        class=${`fixed w-12 h-12 flex lg:w-10 lg:h-10 pl-4 pt-4 lg:p-2 right-0 bottom-0 lg:right-10 
+        class="fixed w-12 h-12 flex lg:w-10 lg:h-10 pl-4 pt-4 lg:p-2 right-0 bottom-0 lg:right-10 
         lg:bottom-10 backdrop-blur lg:text-black lg:bg-stone-300 lg:hover:animate-spin rounded-tl-full 
-        lg:rounded-full overflow-hidden`}
+        lg:rounded-full overflow-hidden print:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
