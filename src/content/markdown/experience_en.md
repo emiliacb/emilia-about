@@ -1,7 +1,7 @@
 ### Mercado Pago - Mercado Libre
 <p style="absolute; margin-top: -2rem; font-size: 13px;">May 2021 - present</p>
 
-#### Software Developer
+#### SSR Software Engineer
 
 - **Developed** scalable user interfaces using React with server side rendering, middlewares and services with Express.
 - **Responsible** for the development and delivery of key features from scratch to production.
