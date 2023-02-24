@@ -2,7 +2,7 @@
 
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Mayo 2021 - presente</p>
 
-#### SSR Software Engineer
+#### Semi Senior Software Engineer
 
 - **Desarrollo** de interfaces usuario escalables usando React con server side Rendering, middlewares y servicios con Express.
 - **Responsable** del desarrollo y delivery de características clave desde cero hasta producción.
