@@ -20,7 +20,7 @@ class HomePage extends HTMLElement {
         id="main"
       >
         <nav-wc></nav-wc>
-        <div class="md:ml-56 mt-12 print:-mt-16">
+        <div class="md:ml-56 mt-12 print:!ml-20 print:!-mt-10">
           ${SECTIONS.map((name) => html`<section-wc name=${name}></section-wc>`)}
         </div>
         <github-button-wc></github-button-wc>

@@ -36,11 +36,7 @@ body {
   .container {
     @apply flex p-6 md:px-12 w-full max-w-screen-lg print:max-w-none m-auto;
   }
-  
-  .section {
-    @apply relative md:pt-16 md:px-6 md:pb-6 w-full text-justify;
-  }
-  
+
   .link {
     @apply -ml-2 p-2 opacity-75 font-sans hover:underline active:italic hover:opacity-100 font-light;
   }
@@ -52,7 +48,7 @@ body {
   
   .h3 {
     @apply text-lg pb-4 md:mt-10 print:text-base font-sans !font-light;
-    @apply print:!text-black;
+    @apply print:!text-black print:!mt-8;
   }
   
   .h4 {
@@ -66,20 +62,20 @@ body {
   
   .custom-prose {
     @apply prose dark:prose-invert prose-stone prose-headings:dark:text-stone-100 prose-h4:pb-0 prose-li:p-0;
-    @apply prose-headings:transition prose-headings:duration-1000 prose-strong:transition prose-strong:duration-1000;
-    @apply prose-a:font-light prose-a:no-underline prose-a:p-2 prose-a:-ml-2 hover:prose-a:underline prose-a:text-cyan-700 dark:prose-a:text-orange-200;
+    @apply prose-headings:transition prose-headings:duration-1000 prose-strong:transition prose-strong:duration-1000 prose-strong:print:dark:!text-black;
+    @apply prose-a:font-light prose-a:print:before:content-['📎'] prose-a:print:dark:!text-black prose-a:no-underline prose-a:p-2 prose-a:-ml-2 hover:prose-a:underline prose-a:text-cyan-700 dark:prose-a:text-orange-200;
     @apply transition duration-1000;
-    @apply print:!text-black;
+    @apply print:!text-black print:prose-ul:w-screen print:prose-ul:max-w-3xl;
   }
   
   .theme-transition {
     @apply absolute top-0 left-0 -z-50 bg-stone-900 w-screen h-screen scale-x-0 transition duration-500 origin-right;
     @apply dark:scale-x-100 dark:origin-left dark:transition dark:duration-500;
-    @apply motion-reduce:hidden;
+    @apply motion-reduce:hidden print:!hidden;
   }
 }
 
-/* Style headings */
+/* Custom styles */
 h2 {
   @apply h2;
 }
@@ -98,4 +94,8 @@ p {
 
 blockquote {
   @apply !not-italic font-light !border-l-2;
+}
+
+br {
+  @apply print:!hidden;
 }

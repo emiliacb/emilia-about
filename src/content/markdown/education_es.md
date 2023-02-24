@@ -6,4 +6,3 @@
 
 ### Bibliotecologia - ISFT 182
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Marzo 2015 - Diciembre 2018</p>
-

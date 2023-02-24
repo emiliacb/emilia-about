@@ -35,6 +35,7 @@ const contents = {
       motionFullFeedback: 'Done! The animations are back',
       skip: 'Skip to content',
       linkHome: 'Home',
+      printLabel: 'Print',
     },
     nav: {
       goTo: 'Skip to',
@@ -69,12 +70,13 @@ const contents = {
       languageLabel: 'Cambiar lenguaje a español',
       languageFeedback: 'Ahora el lenguaje es español',
       darkModeLabel: 'Cambiar tema oscuro',
-      motionFull: 'Activar animaciones',
-      motionReduced: 'Desactivar animaciones',
+      motionFull: 'Desactivar animaciones',
+      motionReduced: 'Activar animaciones',
       motionReducedFeedback: 'Listo! Ahora hay menos animaciones',
       motionFullFeedback: 'Listo! Volvieron las animaciones',
       skip: 'Saltar a contenido',
       linkHome: 'Inicio',
+      printLabel: 'Imprimir',
     },
     nav: {
       goTo: 'Saltar a',

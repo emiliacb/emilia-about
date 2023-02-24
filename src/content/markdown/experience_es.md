@@ -34,3 +34,5 @@
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Agosto 2020 - Octubre 2020</p>
 
 - **Mentorias** y **Clases** para más de 20 estudiantes.
+
+<div class=break-before-page />

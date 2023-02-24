@@ -12,8 +12,8 @@ class Section extends HTMLElement {
 
   get template() {
     return html`
-      <section title=${getContent(`${this.name}.title`)} class="section" id="${this.name}" tabindex="0">
-        <h2 class="h2">${getContent(`${this.name}.title`)}</h2>
+      <section title=${getContent(`${this.name}.title`)} class="relative md:pt-16 md:px-6 md:pb-6 w-full text-justify" id="${this.name}" tabindex="0">
+        <h2 class="h2 print:mt-10">${getContent(`${this.name}.title`)}</h2>
         <div class="custom-prose">${unsafeHTML(getContent(`${this.name}.text`))}</div>
       </section>
     `;
