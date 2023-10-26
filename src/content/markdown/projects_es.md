@@ -10,9 +10,7 @@ Desarrollo de página web completa con renderizado del lado del servidor con Nex
 
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Septiembre 2020 - Febrero 2021</p>
 
-<a href="https://awkbit.com/" target="\_blank" aria-label="Ir a la web de Awkbit" >Desarrollo fullstack</a>
-
-Como contractor desarrollé la mayor parte de la homepage de la empresa, con renderizado del lado del servidor y un CMS.
+Como contractor desarrollé la mayor parte de la antigua homepage de la empresa, con renderizado del lado del servidor y un CMS.
 
 ### CHA
 
