@@ -12,9 +12,7 @@ Developed the full webpage with server side rendering in Next with focus in perf
 
 <p style="absolute; margin-top: -2rem; font-size: 13px;">September 2020 - Febrary 2021</p>
 
-<a href="https://awkbit.com/" target="_blank" aria-label="Go to Awkbit webpage" > Fullstack development </a>
-
-As contractor developed most of the homepage of the company, with server side rendering and a CMS backend.
+As contractor developed most of the old homepage of the company, with server side rendering and a CMS backend.
 
 <br> 
 
