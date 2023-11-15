@@ -1,5 +1,5 @@
-### Gestión de tecnologías de la información - UNPAZ
-<p style="absolute; margin-top: -2rem; font-size: 13px;">Marzo 2020 - presente</p>
+### Diplomatura en Bionegocios - Universidad de Buenos Aires (UBA)
+<p style="absolute; margin-top: -2rem; font-size: 13px;">Junio 2022</p>
 
 ### Desarrollo Fullstack - Soy Henry
 <p style="absolute; margin-top: -2rem; font-size: 13px;">Junio 2020 - Septiembre 2020</p>
