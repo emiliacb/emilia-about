@@ -5,13 +5,13 @@
 #### Semi Senior Software Engineer
 
 - **Desarrollo** de interfaces usuario escalables usando React con server side Rendering, middlewares y servicios con Express.
-- **Referente** en el desarrollo de experiencias basadas en LLMs.
+- **Referente** en desarrollo de soluciones basadas en LLMs para varios equipos.
 - **Responsable** del desarrollo y delivery de características clave desde cero hasta producción.
 - **Construcción** de dashboards de monitoreo en DataDog y uso de herramientas como Kibana y NewRelic.
 - **Contribución** a las bibliotecas internas de componentes UI y creación de librerias nuevas con Lerna.
 - **Creación** de un sitio interno para onboarding y documentos técnicos generales, que ahora usan tres equipos.
 - **Priorización** del roadmap del producto y la experiencia del usuario desde una perspectiva de desarrollo. Y **Coordinación** de manera efectiva los intereses y opiniones en reuniones de diferentes equipos.
-- **Presentación** de charlas técnicas sobre accesibilidad y desarrollo frontend para más de 50 desarrolladores y diseñadores.
+- **Presentación** de charlas técnicas sobre LLMs, accesibilidad y observabilidad para más de 50 desarrolladores y diseñadores.
 - **Demos** desde la perspectiva del usuario ofrecidas en un lenguaje no técnico para equipos de UX y producto.
 
 ### Freelance Fullstack Developer

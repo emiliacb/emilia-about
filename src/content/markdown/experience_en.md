@@ -4,12 +4,13 @@
 #### Semi Senior Software Engineer
 
 - **Developed** scalable user interfaces using React with server side rendering, middlewares and services with Express.
+- **Go-to person** for LLM-based solutions across several teams.
 - **Responsible** for the development and delivery of key features from scratch to production.
 - **Built** tracking dashboards in DataDog and used tools like Kibana and NewRelic.
 - **Contributed** to the internal UI libraries, and started new ones using Lerna.
 - **Created** an internal site for onboarding and general technical documentation, now used by three teams.
 - **Prioritized** the product roadmap and user experience from a development perspective. **Coordinated** the interests and opinions of the different teams effectively.
-- **Presented** technical talks on accessibility and frontend development to more than 50 developers and designers.
+- **Presented** technical talks on LLMs, accessibility and observability to developers and designers.
 - **User-centered** demos delivered in a non-technical language to UX and product teams.
 
 ### Freelance Fullstack Developer
