@@ -36,7 +36,7 @@ class Nav extends HTMLElement {
 
   get template() {
     return html`
-      <nav class="md:fixed w-52 print:hidden p-3 -mx-3" aria-label="Menu" tabindex="0">
+      <nav class="md:sticky md:top-14 w-52 print:hidden p-3 -mx-3" aria-label="Menu" tabindex="0">
         <ul class="flex flex-col gap-3">
           ${SECTIONS.map(
             (section) =>
