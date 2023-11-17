@@ -10,4 +10,4 @@ A simple about me page
 
 | Webpage  | Docs  |
 |---|---|
-| https://emiliaborg.ar  | https://docs.emiliaborg.ar  |
+| https://emiliacabral.com  | https://docs.emiliacabral.com  |
