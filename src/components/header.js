@@ -16,7 +16,6 @@ class Header extends HTMLElement {
     return html`
       <header class="container relative justify-between items-center">
         <a
-          role="button"
           class="visible-on-focus bg-black dark:bg-white text-white dark:text-black focus-visible:p-5 focus-visible:absolute"
           href="#experience"
         >
