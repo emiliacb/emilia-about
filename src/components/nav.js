@@ -46,7 +46,12 @@ class Nav extends HTMLElement {
           )}
           <!-- TODO move to new component -->
           <li class="list-item-copy li flex items-center h-6" @mouseleave=${this.resetCopyButton}>
-            <a class="link opacity-100 font-normal" href="https://calendly.com/emilia-cb/30min-meet">
+            <a 
+              class="link opacity-100 font-normal"
+              href="https://calendly.com/emilia-cb/30min-meet"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               ${getContent('nav.contact')}
             </a>
             <button

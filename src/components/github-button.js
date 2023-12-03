@@ -5,7 +5,7 @@ class GithubButton extends HTMLElement {
   get template() {
     return html`
       <a
-        href="https://github.com/Em3c2/emilia-about"
+        href="https://github.com/emiliacb/emilia-about"
         target="_blank"
         rel="noopener noreferrer"
         class="fixed w-12 h-12 flex lg:w-10 lg:h-10 pl-4 pt-4 lg:p-2 right-0 bottom-0 lg:right-10 
