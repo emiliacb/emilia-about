@@ -39,7 +39,7 @@ const contents = {
     },
     nav: {
       goTo: 'Skip to',
-      contact: 'Contact',
+      contact: 'Reach',
       copyEmail: 'Copy e-mail',
       copied: 'Copied!',
     },
@@ -80,7 +80,7 @@ const contents = {
     },
     nav: {
       goTo: 'Saltar a',
-      contact: 'Contacto',
+      contact: 'Charlar',
       copyEmail: 'Copiar email',
       copied: 'Copiado!',
     },
