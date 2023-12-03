@@ -15,10 +15,6 @@ class Nav extends HTMLElement {
     this.handleCopy = this.handleCopy.bind(this);
   }
 
-  openEmail() {
-    window.location.assign('mailto:emiliacabralb@gmail.com');
-  }
-
   resetCopyButton() {
     this.isCopySuccesfull = false;
     render(this.template, this);
@@ -26,7 +22,7 @@ class Nav extends HTMLElement {
 
   handleCopy() {
     navigator.clipboard
-      .writeText('emiliacabralb@gmail.com')
+      .writeText('emiliacabralb' + '@' + 'gmail.com') // This is to avoid the crawling of my email
       .then(() => {
         this.isCopySuccesfull = true;
         render(this.template, this);
@@ -42,15 +38,18 @@ class Nav extends HTMLElement {
             (section) =>
               html`
                 <li>
-                  <a role="button" class="link" aria-label=${`${getContent('nav.goTo')} ${section}`} href=${`#${section}`}>
+                  <a class="link" aria-label=${`${getContent('nav.goTo')} ${section}`} href=${`#${section}`}>
                     ${getContent(`${section}.title`)}
                   </a>
                 </li>
               `,
           )}
-          <!-- TODO mover a un componente nuevo -->
+          <!-- TODO move to new component -->
           <li class="list-item-copy li flex items-center h-6" @mouseleave=${this.resetCopyButton}>
-            <a class="link opacity-100 font-normal" role="button" @click=${this.openEmail} href=""> ${getContent('nav.contact')} </a>
+            <a class="link opacity-100 font-normal" href="https://calendly.com/emilia-cb/30min-meet">
+              ${getContent('nav.contact')}
+              <img src="https://em-content.zobj.net/source/telegram/358/calendar_1f4c5.webp" loading="lazy" alt="">
+            </a>
             <button
               data-testid="button-copy"
               class="button-copy relative h-8 items-center px-2 w-8 flex focus-visible:opacity-100 transition-transform duration-100"
