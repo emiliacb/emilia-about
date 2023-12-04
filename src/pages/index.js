@@ -10,6 +10,7 @@ import '../components/mouse-follower';
 
 /* Utils */
 import { SECTIONS } from '../utils/constants';
+import { getContent } from '../utils/contents';
 
 class HomePage extends HTMLElement {
   get template() {
@@ -30,6 +31,15 @@ class HomePage extends HTMLElement {
         class="theme-transition"
       ></div>
       <mouse-follower-wc></mouse-follower-wc>
+      <ab-chat 
+        chatbotID="kYgs8Q3vcvXg1P4XnWEfh"
+        theme="dark"
+        color="#1C1917"
+        headline=${getContent('chatbot.headline')}
+        description=${getContent('chatbot.description')}
+        initialMessage=${getContent('chatbot.initialMessage')}
+        placeholder=${getContent('chatbot.placeholder')}
+      ></ab-chat>
     `;
   }
 

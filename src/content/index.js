@@ -43,6 +43,12 @@ const contents = {
       copyEmail: 'Copy e-mail',
       copied: 'Copied!',
     },
+    chatbot: {
+      headline: 'Do you have a question?',
+      description: 'You don\'t need to read everything, we can answer it with AI',
+      initialMessage: 'Hello! 😎 \n Can I help you with any questions about Emilia?',
+      placeholder: '...Your question',
+    },
     experience: {
       title: 'Experience',
       id: 'experience',
@@ -83,6 +89,12 @@ const contents = {
       contact: 'Charlar',
       copyEmail: 'Copiar email',
       copied: 'Copiado!',
+    },
+    chatbot: {
+      headline: '¿Tenés una pregunta?',
+      description: 'No es necesario que leas todo, podemos responderla con IA', 
+      initialMessage: 'Hola! 😎 \n ¿Te puedo ayudar con alguna duda sobre Emilia?',
+      placeholder: '...Tu pregunta',
     },
     experience: {
       title: 'Experiencia',
