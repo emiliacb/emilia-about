@@ -33,8 +33,9 @@ class HomePage extends HTMLElement {
       <mouse-follower-wc></mouse-follower-wc>
       <ab-chat 
         chatbotID="kYgs8Q3vcvXg1P4XnWEfh"
-        theme="dark"
+        theme="light"
         color="#1C1917"
+        className="hidden md:fixed bottom-0 right-10"
         headline=${getContent('chatbot.headline')}
         description=${getContent('chatbot.description')}
         initialMessage=${getContent('chatbot.initialMessage')}
