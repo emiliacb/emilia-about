@@ -45,7 +45,7 @@ const contents = {
     },
     chatbot: {
       headline: 'Do you have a question?',
-      description: 'You don\'t need to read everything, we can answer it with AI',
+      description: 'We can answer it with AI',
       initialMessage: 'Hello! 😎 \n Can I help you with any questions about Emilia?',
       placeholder: '...Your question',
     },
@@ -92,7 +92,7 @@ const contents = {
     },
     chatbot: {
       headline: '¿Tenés una pregunta?',
-      description: 'No es necesario que leas todo, podemos responderla con IA', 
+      description: 'Podemos responderla con IA', 
       initialMessage: 'Hola! 😎 \n ¿Te puedo ayudar con alguna duda sobre Emilia?',
       placeholder: '...Tu pregunta',
     },

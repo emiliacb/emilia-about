@@ -55,7 +55,7 @@ class MouseFollower extends HTMLElement {
 
       <div
         style=${styleMap(this.stylesDot)}
-        class="fixed backdrop-invert z-50	rounded-full bg-stone-300 transition-all ease-out duration-100 mix-blend-difference pointer-events-none ${this.scrolling ? 'animate-ping' : ''}"
+        class="fixed z-50	rounded-full bg-stone-300 transition-all ease-out duration-100 mix-blend-difference pointer-events-none ${this.scrolling ? 'animate-ping' : ''}"
       ></div>
     `;
   }

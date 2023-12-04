@@ -31,17 +31,17 @@ class HomePage extends HTMLElement {
         class="theme-transition"
       ></div>
       <mouse-follower-wc></mouse-follower-wc>
-      <div class="hidden md:fixed bottom-8 right-10">
-        <ab-chat 
-          chatbotID="kYgs8Q3vcvXg1P4XnWEfh"
-          theme="light"
-          color="#1C1917"
-          headline=${getContent('chatbot.headline')}
-          description=${getContent('chatbot.description')}
-          initialMessage=${getContent('chatbot.initialMessage')}
-          placeholder=${getContent('chatbot.placeholder')}
-        ></ab-chat>
-      </div>
+      <ab-chat 
+        chatbotID="kYgs8Q3vcvXg1P4XnWEfh"
+        theme="dark"
+        orientation="right"
+        color="#1C1917"
+        class="hidden md:block fixed bottom-8 right-10"
+        headline=${getContent('chatbot.headline')}
+        description=${getContent('chatbot.description')}
+        initialMessage=${getContent('chatbot.initialMessage')}
+        placeholder=${getContent('chatbot.placeholder')}
+      ></ab-chat>
     `;
   }
 
