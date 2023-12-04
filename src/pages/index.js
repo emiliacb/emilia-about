@@ -36,7 +36,7 @@ class HomePage extends HTMLElement {
         theme="dark"
         orientation="right"
         color="#1C1917"
-        class="hidden md:block fixed bottom-8 right-10"
+        class="hidden md:block fixed bottom-5 right-10"
         headline=${getContent('chatbot.headline')}
         description=${getContent('chatbot.description')}
         initialMessage=${getContent('chatbot.initialMessage')}
