@@ -31,7 +31,7 @@ class HomePage extends HTMLElement {
         class="theme-transition"
       ></div>
       <mouse-follower-wc></mouse-follower-wc>
-      <div className="hidden md:fixed bottom-10 right-10">
+      <div class="hidden md:fixed bottom-8 right-10">
         <ab-chat 
           chatbotID="kYgs8Q3vcvXg1P4XnWEfh"
           theme="light"
