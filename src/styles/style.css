@@ -1,6 +1,5 @@
 /* Components */
 @import 'nav.css';
-@import 'mouse-follower.css';
 
 @tailwind base;
 @tailwind components;
@@ -24,11 +23,11 @@ body {
 }
 
 * {
-  @apply motion-reduce:!transition-none motion-reduce:!animate-none md:!cursor-none;
+  @apply motion-reduce:!transition-none motion-reduce:!animate-none;
 }
 
 .motion-reduce * {
-  @apply !transition-none !animate-none !cursor-auto;
+  @apply !transition-none !animate-none;
 }
 
 /* Custom Tailwind */
