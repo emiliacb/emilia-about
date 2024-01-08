@@ -6,7 +6,6 @@ import '../components/section';
 import '../components/header';
 import '../components/nav';
 import '../components/github-button';
-import '../components/mouse-follower';
 
 /* Utils */
 import { SECTIONS } from '../utils/constants';
@@ -30,7 +29,6 @@ class HomePage extends HTMLElement {
         aria-hidden="true"
         class="theme-transition"
       ></div>
-      <mouse-follower-wc></mouse-follower-wc>
       <ab-chat 
         chatbotID="kYgs8Q3vcvXg1P4XnWEfh"
         theme="dark"
