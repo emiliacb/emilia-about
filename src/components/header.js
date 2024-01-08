@@ -64,7 +64,7 @@ class Header extends HTMLElement {
           <a
             class="grid print:!hidden place-content-center text-3xl w-12 h-12 align-middle focus:rounded-full transition-transform duration-300 hover:scale-125"
             aria-label=${getContent('header.printLabel')}
-            href="/cv.pdf"
+            href="Emilia_Cabral_CV.pdf"
             download="Emilia_Cabral_CV.pdf"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
