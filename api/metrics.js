@@ -3,6 +3,8 @@ import { Logtail } from '@logtail/node';
 
 const logtail = new Logtail(process.env.LOGTAIL_TOKEN);
 
+// Temporal change
+
 /**
  * @name /api/metrics
  * @function
