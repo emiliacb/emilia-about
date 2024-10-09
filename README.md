@@ -7,7 +7,3 @@
 A simple about me page
 
 <br>
-
-| Webpage  | Docs  |
-|---|---|
-| https://emiliacabral.com  | https://docs.emiliacabral.com  |
