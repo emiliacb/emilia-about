@@ -10,4 +10,4 @@ A simple about me page
 
 | Webpage  | Docs  |
 |---|---|
-| https://emiliacabral.com  | https://docs.emiliacabral.com  |
+| https://emilia-about.vercel.app/ | TODO | 
